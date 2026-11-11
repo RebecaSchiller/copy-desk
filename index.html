@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copy Desk: Every change, your call.</title>
+<meta name="description" content="A free AI copyediting tool for people without a copy chief. Paste a draft, pick AP or Chicago style, and accept or reject every suggested change.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><strong>Copy Desk</strong><span>Every change, your call.</span></a>
+  <nav class="topnav" aria-label="Main">
+    <a class="link" href="guide.html">Guide</a>
+    <a class="btn small" href="app.html">Launch the app &rarr;</a>
+  </nav>
+</div>
+
+<header class="hero">
+  <div class="pill">Built for people who edit their own work</div>
+  <h1>A second pair of eyes <em>on every draft.</em></h1>
+  <p class="tag">Every change, your call.</p>
+  <div class="badge">AI powered by Claude</div>
+  <p class="lead">The person who wrote a draft is the worst person to proofread it. Copy Desk reads your text against AP or Chicago style, marks each suggested change, and leaves the decision to you.</p>
+  <div class="cta">
+    <a class="btn" href="app.html">Launch the app &rarr;</a>
+    <a class="btn ghost" href="#how">See how it works</a>
+  </div>
+</header>
+
+<main>
+
+<section class="panel" aria-labelledby="f1">
+  <div class="inner">
+    <p class="eyebrow">See every change</p>
+    <h2 id="f1">Nothing gets edited behind your back.</h2>
+    <p>Every suggestion shows as a tracked change: what came out, what went in, and the reason. Select a change to reject it, or turn them all on or off at once. Your final text updates as you go.</p>
+    <div class="sample" aria-label="Sample of tracked changes">
+      <div class="cap">Sample</div>
+      The team <span class="del">recieved</span> <span class="ins">received</span> the grant in <span class="del">Febuary</span> <span class="ins">February</span>. The program serves <span class="del">5 counties</span> <span class="ins">five counties</span>.
+      <div class="q"><span class="chip">Query</span>Confirm the county count against the program records.</div>
+    </div>
+  </div>
+</section>
+
+<section class="panel fog" aria-labelledby="f2">
+  <div class="inner">
+    <p class="eyebrow">Your style guide</p>
+    <h2 id="f2">AP, Chicago, or neither.</h2>
+    <p>Pick the guide your organization uses. Choose AP for news releases, web copy, and marketing. Choose Chicago for long-form and formal writing. Choose neither and Copy Desk fixes errors and keeps your usage consistent, following the conventions you already use.</p>
+    <p>You also choose how deep the edit goes. A light edit fixes spelling, grammar, and punctuation. A standard edit adds style, consistency, and clarity.</p>
+  </div>
+</section>
+
+<section class="panel" aria-labelledby="f3">
+  <div class="inner">
+    <p class="eyebrow">Ask, don't assume</p>
+    <h2 id="f3">Questions go to you, not into your text.</h2>
+    <p>When Copy Desk is not sure something is an error, it does not change it. It adds a query for you instead: a figure that does not match, a name spelled two ways, a claim that needs a source. You decide what is true.</p>
+  </div>
+</section>
+
+<section class="panel fog" aria-labelledby="f4">
+  <div class="inner">
+    <p class="eyebrow">Long drafts welcome</p>
+    <h2 id="f4">Paste the whole report.</h2>
+    <p>Copy Desk splits long drafts into parts on paragraph breaks and edits each one in turn. You see one combined set of changes at the end.</p>
+    <p>There is also an optional check for AI-sounding patterns: em dashes, inflated significance, promotional wording, filler clauses, and formulaic openers.</p>
+  </div>
+</section>
+
+<section class="panel" aria-labelledby="who">
+  <div class="inner">
+    <p class="eyebrow">Who it's for</p>
+    <h2 id="who">Built for communicators without a copy chief.</h2>
+    <p>Copy Desk is for anyone who writes for an organization and edits their own work. That is the communications manager who is also the proofreader. It is the grant writer on deadline and the consultant sending a client report at 9 p.m. It is the small team that has never had an editor.</p>
+    <p>Copy Desk does not replace a human editor on work that matters most. It catches what a tired writer misses, and it shows its work so you can check it.</p>
+  </div>
+</section>
+
+<section class="panel fog" id="how" aria-labelledby="how-h">
+  <p class="eyebrow">How it works</p>
+  <h2 id="how-h">Nothing to install. No account with us.</h2>
+  <ol class="steps">
+    <li><div><h3>Paste your draft</h3><p>Copy the text from Word, Google Docs, or an email and paste it into the box.</p></div></li>
+    <li><div><h3>Choose style and level</h3><p>Pick AP, Chicago, or no style guide. Pick a light or standard edit.</p></div></li>
+    <li><div><h3>Add your API key</h3><p>Copy Desk uses your own Anthropic API key, so you pay Anthropic directly for what you use. The <a href="guide.html#key">guide</a> shows where to get one. The API is a separate product from a Claude.ai subscription.</p></div></li>
+    <li><div><h3>Review and accept</h3><p>Go through the tracked changes, reject any you disagree with, then copy or download your edited text.</p></div></li>
+  </ol>
+  <p style="text-align:center"><a class="btn" href="guide.html" style="background:var(--ocean);border-color:var(--ocean)">Read the full guide</a></p>
+</section>
+
+<section class="panel" aria-labelledby="faq-h">
+  <p class="eyebrow">FAQ</p>
+  <h2 id="faq-h">Common questions.</h2>
+  <div class="faq">
+    <h3>Does Copy Desk cost anything?</h3>
+    <p>The tool itself has no subscription and no account. AI usage is billed to your own Anthropic account based on how much text you edit. Check current pricing at console.anthropic.com.</p>
+
+    <h3>Do I need an API key?</h3>
+    <p>Yes. The editing is done by Claude, and your key is what connects Copy Desk to it. Without a key, the tool cannot edit.</p>
+
+    <h3>Is my draft private?</h3>
+    <p>Copy Desk has no server of its own and does not store your draft. Your text goes from your browser straight to Anthropic, using your key. Anthropic's terms and data policies apply to what you send, so read them before you paste anything confidential.</p>
+
+    <h3>Will it change my voice?</h3>
+    <p>It is built to leave your meaning, facts, names, quotations, and voice alone. Because every change is shown and optional, you can reject any edit that does not sound like you.</p>
+
+    <h3>Is it always right?</h3>
+    <p>No. Copy Desk applies AP and Chicago conventions as the AI model knows them, not from the stylebooks themselves. Check style calls against the current AP Stylebook or Chicago Manual of Style, and read every change before you publish.</p>
+
+    <h3>How long can my draft be?</h3>
+    <p>Long drafts are split into parts of about 7,000 characters and edited one after another. Each part is edited on its own, so a term spelled two ways in different sections may not be flagged. Longer drafts take longer and use more of your API credit.</p>
+
+    <h3>Which browsers work?</h3>
+    <p>Use a current desktop browser. Copy Desk is a web page, so there is nothing to download.</p>
+  </div>
+</section>
+
+</main>
+
+<section class="closer">
+  <h2 style="margin:0 0 8px;font-size:1.8rem;color:#fff">Ready to edit?</h2>
+  <p>No account. Nothing stored on our servers. Your draft goes straight from your browser to Anthropic using your own API key.</p>
+  <div class="cta">
+    <a class="btn" href="app.html">Launch the app &rarr;</a>
+    <a class="btn ghost" href="guide.html">Read the guide</a>
+  </div>
+</section>
+
+<footer class="site">
+  <strong>Copy Desk</strong>
+  Every change, your call.<br>
+  Part of the <a href="https://plainspeakingcomms.com/psc-tools">PSC Tools</a> suite &middot; AI powered by Claude<br>
+  Questions? <a href="mailto:rebeca@plainspeakingcomms.com">rebeca@plainspeakingcomms.com</a>
+</footer>
+
+</body>
+</html>
