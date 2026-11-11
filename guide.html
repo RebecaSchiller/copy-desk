@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copy Desk Guide: How to use Copy Desk</title>
+<meta name="description" content="Step-by-step guide to Copy Desk: get an API key, paste a draft, choose a style guide, review changes, and fix common problems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><strong>Copy Desk</strong><span>Every change, your call.</span></a>
+  <nav class="topnav" aria-label="Main">
+    <a class="link" href="index.html">Home</a>
+    <a class="btn small" href="app.html">Launch the app &rarr;</a>
+  </nav>
+</div>
+
+<header class="hero" style="padding-bottom:40px">
+  <h1>How to use Copy Desk</h1>
+  <p class="lead">Get started in four steps, then see what each option does and what to try if something goes wrong.</p>
+</header>
+
+<main>
+
+<section class="panel" aria-labelledby="quick">
+  <p class="eyebrow">Quick start</p>
+  <h2 id="quick">Four steps.</h2>
+  <ol class="steps">
+    <li><div><h3>Get an Anthropic API key</h3><p>You only do this once. See <a href="#key">Getting your API key</a> below.</p></div></li>
+    <li><div><h3>Paste your draft</h3><p>Open <a href="app.html">the app</a> and paste your text into the draft box. The word count appears under it.</p></div></li>
+    <li><div><h3>Choose style guide and edit level</h3><p>See <a href="#options">Choosing your options</a> below.</p></div></li>
+    <li><div><h3>Add your key and click Copyedit my draft</h3><p>Then <a href="#review">review the changes</a> and copy or download your edited text.</p></div></li>
+  </ol>
+</section>
+
+<section class="panel fog" id="key" aria-labelledby="key-h">
+  <div class="inner">
+    <p class="eyebrow">Setup</p>
+    <h2 id="key-h">Getting your API key.</h2>
+    <p>Copy Desk uses your own Anthropic API key. You pay Anthropic directly for the text you edit, and Copy Desk adds no fee. The API is a separate product from a Claude.ai subscription, so a Claude.ai plan does not include API access.</p>
+    <ol>
+      <li>Go to <strong>console.anthropic.com</strong> and sign in, or create an account.</li>
+      <li>Add billing if the console asks for it. Check the console for current pricing and for any credits on your account.</li>
+      <li>Open the API keys section and create a new key. Give it a name you will recognize, such as "Copy Desk".</li>
+      <li>Copy the key right away. Keys are typically shown in full only once. It starts with <strong>sk-ant-</strong>.</li>
+      <li>Paste it into the API key field in Copy Desk.</li>
+    </ol>
+    <div class="callout">Menu labels in the console may change over time. If a step does not match what you see, look for the API keys page in the console's settings or navigation.</div>
+    <div class="callout warn"><strong>Shared computer?</strong> Leave "Remember this key in this browser" unchecked. If you did check it, click "Forget saved key" when you finish.</div>
+  </div>
+</section>
+
+<section class="panel" id="options" aria-labelledby="opt-h">
+  <div class="inner">
+    <p class="eyebrow">Options</p>
+    <h2 id="opt-h">Choosing your options.</h2>
+
+    <h3>Style guide</h3>
+    <ul>
+      <li><strong>AP Style:</strong> for news releases, blog posts, web copy, and general marketing and communications writing.</li>
+      <li><strong>Chicago Style:</strong> for long-form, formal, and book-length writing.</li>
+      <li><strong>No style guide:</strong> fixes errors and keeps usage consistent with the conventions you already use. Pick this if your organization has its own house style.</li>
+    </ul>
+
+    <h3>Edit level</h3>
+    <ul>
+      <li><strong>Light:</strong> spelling, grammar, and punctuation only, plus clear inconsistencies. It does not touch word choice or sentence structure.</li>
+      <li><strong>Standard:</strong> everything in Light, plus style-guide rules, consistency, and tightening where a sentence is unclear or broken. It aims to keep your voice.</li>
+    </ul>
+    <p>If you are not sure, start with Light on anything you have already polished and Standard on a first draft.</p>
+
+    <h3>AI-sounding patterns</h3>
+    <p>Tick this box to also flag em dashes, inflated-significance phrases, promotional wording, filler clauses, and formulaic openers. These show up in the change list under the label "AI pattern".</p>
+  </div>
+</section>
+
+<section class="panel fog" id="review" aria-labelledby="rev-h">
+  <div class="inner">
+    <p class="eyebrow">Review</p>
+    <h2 id="rev-h">Reviewing your changes.</h2>
+    <p>After a few moments you will see four things.</p>
+    <ul>
+      <li><strong>Tracked text.</strong> Your draft with each change marked. Red with a line through it is removed. Green is added. Select any change to reject it. Select it again to restore it.</li>
+      <li><strong>Change list.</strong> Every change with a category (such as Spelling, Punctuation, or Numbers) and a short reason. Use the checkboxes to accept or reject, or use Accept all and Reject all.</li>
+      <li><strong>Queries for the author.</strong> Questions, not edits. They flag things you should check against your sources. Copy Desk does not verify facts.</li>
+      <li><strong>Your edited text.</strong> The final version based on the changes you accepted. Use Copy edited text or Download .txt.</li>
+    </ul>
+    <p>If a section called "Suggestions that could not be placed" appears, the editor proposed a change but its quote did not match your draft exactly. Apply those by hand if they make sense.</p>
+    <div class="callout">Copy Desk returns plain text. Formatting such as bold, italics, headings, and tracked changes in Word does not carry over, so paste the edited text back into your document and reapply any formatting.</div>
+  </div>
+</section>
+
+<section class="panel" aria-labelledby="tips-h">
+  <div class="inner">
+    <p class="eyebrow">Tips</p>
+    <h2 id="tips-h">Getting the most from it.</h2>
+    <ul>
+      <li><strong>Keep your original.</strong> Copy Desk never changes your source document. Your draft stays in the box until you close the page.</li>
+      <li><strong>Read every change.</strong> Reject anything that shifts your meaning or does not sound like you.</li>
+      <li><strong>Check the queries.</strong> They are often the most valuable part, because they point at facts and figures a spell checker cannot catch.</li>
+      <li><strong>Long drafts:</strong> Copy Desk edits them in parts of about 7,000 characters, one after another, so expect it to take longer and use more API credit. Each part is edited on its own. Do a quick search of your own for names, terms, and figures that appear in more than one section.</li>
+      <li><strong>Confirm style calls.</strong> Copy Desk applies AP and Chicago as the AI model knows them. Check anything important against the current AP Stylebook or Chicago Manual of Style.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="panel fog" id="trouble" aria-labelledby="tr-h">
+  <div class="inner">
+    <p class="eyebrow">Troubleshooting</p>
+    <h2 id="tr-h">If something goes wrong.</h2>
+
+    <h3>"Anthropic rejected the API key"</h3>
+    <ul>
+      <li>Check that you pasted the whole key and that it starts with sk-ant-.</li>
+      <li>Check in the Anthropic console that the key is active and your account has billing set up.</li>
+    </ul>
+
+    <h3>"Anthropic is rate limiting this key"</h3>
+    <p>Wait a minute and try again. Long drafts send several requests in a row, which can trigger this.</p>
+
+    <h3>"Failed to fetch" or no response</h3>
+    <p>This usually points to a network problem. A browser extension that blocks requests can also cause it. Check your connection and try again in a private window with extensions off.</p>
+
+    <h3>"Part 2 came back unreadable and was skipped"</h3>
+    <p>The editor's reply for that part could not be read. Run Copy Desk again. Because the other parts were fine, you can also paste just that section on its own.</p>
+
+    <h3>"Part 3 hit the length limit"</h3>
+    <p>Some suggestions for that part may be missing. Paste that section on its own, or split it into smaller pieces.</p>
+
+    <h3>An error that mentions the model</h3>
+    <p>Email <a href="mailto:rebeca@plainspeakingcomms.com">rebeca@plainspeakingcomms.com</a> with the full message so the tool can be updated.</p>
+
+    <h3>No changes suggested</h3>
+    <p>That can mean the draft is clean. It can also mean the edit level was Light. Try Standard, and check the queries list.</p>
+  </div>
+</section>
+
+<section class="panel" aria-labelledby="priv-h">
+  <div class="inner">
+    <p class="eyebrow">Privacy</p>
+    <h2 id="priv-h">Where your draft goes.</h2>
+    <p>Copy Desk has no server of its own and does not store your draft. When you click Copyedit my draft, your text and your API key go from your browser directly to Anthropic. Anthropic's terms and data policies apply to what you send, so read them before you paste anything confidential.</p>
+    <p>If you tick "Remember this key in this browser," the key is saved in that browser on that device only.</p>
+    <p style="text-align:center;margin-top:26px"><a class="btn" href="app.html">Launch the app &rarr;</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <strong>Copy Desk</strong>
+  Every change, your call.<br>
+  Part of the <a href="https://plainspeakingcomms.com/psc-tools">PSC Tools</a> suite &middot; AI powered by Claude<br>
+  Need help? <a href="mailto:rebeca@plainspeakingcomms.com">rebeca@plainspeakingcomms.com</a>
+</footer>
+
+</body>
+</html>
